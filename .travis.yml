@@ -68,7 +68,8 @@ before_install:
 script:
 - cd $GOPATH/src/github.com/enkeys/qdr-operator
 - make
-# - make cluster-test
+- make test
+- make cluster-test
 
 # TODO Reporting
 # after_success:
