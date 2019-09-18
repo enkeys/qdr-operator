@@ -6,6 +6,7 @@ language: go
 
 go:
   - 1.13.x
+  - 1.12.x
 
 go_import_path: github.com/enkeys/qdr-operator
 services:
@@ -68,7 +69,7 @@ before_install:
 script:
 - cd $GOPATH/src/github.com/enkeys/qdr-operator
 - make
-- go test -v "./test/e2e"
+- go test "./test/e2e"
 
 # TODO Reporting
 # after_success:
