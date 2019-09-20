@@ -5,7 +5,8 @@ dist: bionic
 language: go
 
 go:
-  - 1.13.x
+#  - master
+# - 1.13.x
   - 1.12.x
 
 go_import_path: github.com/enkeys/qdr-operator
@@ -29,10 +30,10 @@ env:
 
 before_install:
 # TODO Reporting
-# - go get github.com/wadey/gocovmerge
-# - go get github.com/mattn/goveralls
-# - go get github.com/tools/godep
-#- go get -u golang.org/x/lint/golint
+- go get github.com/wadey/gocovmerge
+- go get github.com/mattn/goveralls
+- go get github.com/tools/godep
+- go get -u golang.org/x/lint/golint
 
 # Configure GO environment
 ## install dep
@@ -69,9 +70,8 @@ before_install:
 script:
 - cd $GOPATH/src/github.com/enkeys/qdr-operator
 - make
-- go test "./test/e2e"
+- go test -v -race "./test/e2e" -covermode=count -coverprofile=organize.cov
 
-# TODO Reporting
 # after_success:
-# - gocovmerge *.cov */*.cov > merged.coverprofile
-# - $HOME/gopath/bin/goveralls -coverprofile merged.coverprofile -service=travis-ci
+- gocovmerge *.cov */*.cov > merged.cov erprofile
+- $GOPATH/bin/goveralls -coverprofile merged.coverprofile -service=travis-ci
