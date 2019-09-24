@@ -25,8 +25,7 @@ env:
     - CHANGE_MINIKUBE_NONE_USER=true
     - KUBECONFIG=$HOME/.kube/config
     - KUBERNETES_VERSION="$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)"
-    - OPERATORSDK_VERSION="$(curl --silent 'https://api.github.com/repos/operator-framework/operator-sdk/releases/latest' | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')"
-
+    - OPERATORSDK_VERSION="$(curl -s https://api.github.com/repos/operator-framework/operator-sdk/releases/latest | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')"
 
 before_install:
 # TODO Reporting
