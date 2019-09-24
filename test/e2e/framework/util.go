@@ -26,7 +26,7 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 	clientcmdapi "k8s.io/client-go/tools/clientcmd/api"
 
-	e2elog "github.com/interconnectedcloud/qdr-operator/test/e2e/framework/log"
+	e2elog "github.com/enkeys/qdr-operator/test/e2e/framework/log"
 
 	"github.com/onsi/gomega"
 )

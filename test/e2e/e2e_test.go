@@ -25,7 +25,7 @@ import (
 	// See https://github.com/kubernetes/kubernetes/issues/74827
 	// "github.com/onsi/ginkgo"
 
-	"github.com/interconnectedcloud/qdr-operator/test/e2e/framework"
+	"github.com/enkeys/qdr-operator/test/e2e/framework"
 )
 
 func init() {

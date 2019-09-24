@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"github.com/interconnectedcloud/qdr-operator/pkg/controller/interconnect"
+	"github.com/enkeys/qdr-operator/pkg/controller/interconnect"
 )
 
 func init() {

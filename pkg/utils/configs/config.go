@@ -5,9 +5,9 @@ import (
 	"strconv"
 	"text/template"
 
-	v1alpha1 "github.com/interconnectedcloud/qdr-operator/pkg/apis/interconnectedcloud/v1alpha1"
-	"github.com/interconnectedcloud/qdr-operator/pkg/constants"
-	"github.com/interconnectedcloud/qdr-operator/pkg/utils/openshift"
+	v1alpha1 "github.com/enkeys/qdr-operator/pkg/apis/interconnectedcloud/v1alpha1"
+	"github.com/enkeys/qdr-operator/pkg/constants"
+	"github.com/enkeys/qdr-operator/pkg/utils/openshift"
 )
 
 func isSslProfileDefined(m *v1alpha1.Interconnect, name string) bool {

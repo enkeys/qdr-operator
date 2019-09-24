@@ -168,7 +168,7 @@ items:
                                 fieldPath: metadata.name
                           - name: OPERATOR_NAME
                             value: qdr-operator
-                          image: quay.io/interconnectedcloud/qdr-operator
+                          image: quay.io/enkeys/qdr-operator
                           imagePullPolicy: Always
                           name: qdr-operator
                           ports:

@@ -1,8 +1,8 @@
 package qdrmanagement
 
 import (
-	"github.com/interconnectedcloud/qdr-operator/test/e2e/framework"
-	"github.com/interconnectedcloud/qdr-operator/test/e2e/framework/qdrmanagement/entities"
+	"github.com/enkeys/qdr-operator/test/e2e/framework"
+	"github.com/enkeys/qdr-operator/test/e2e/framework/qdrmanagement/entities"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/util/wait"
 	"time"

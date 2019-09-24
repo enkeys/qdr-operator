@@ -19,7 +19,7 @@ limitations under the License.
 package scheme
 
 import (
-	interconnectedcloudv1alpha1 "github.com/interconnectedcloud/qdr-operator/pkg/apis/interconnectedcloud/v1alpha1"
+	interconnectedcloudv1alpha1 "github.com/enkeys/qdr-operator/pkg/apis/interconnectedcloud/v1alpha1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

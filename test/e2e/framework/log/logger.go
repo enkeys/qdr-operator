@@ -22,7 +22,7 @@ import (
 
 	"github.com/onsi/ginkgo"
 
-	"github.com/interconnectedcloud/qdr-operator/test/e2e/framework/ginkgowrapper"
+	"github.com/enkeys/qdr-operator/test/e2e/framework/ginkgowrapper"
 )
 
 func nowStamp() string {

@@ -4,8 +4,8 @@ import (
 	"os"
 	"strconv"
 
-	v1alpha1 "github.com/interconnectedcloud/qdr-operator/pkg/apis/interconnectedcloud/v1alpha1"
-	"github.com/interconnectedcloud/qdr-operator/pkg/utils/configs"
+	v1alpha1 "github.com/enkeys/qdr-operator/pkg/apis/interconnectedcloud/v1alpha1"
+	"github.com/enkeys/qdr-operator/pkg/utils/configs"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/util/intstr"
 	logf "sigs.k8s.io/controller-runtime/pkg/runtime/log"

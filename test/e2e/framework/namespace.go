@@ -20,7 +20,7 @@ import (
 	"sync"
 	"time"
 
-	e2elog "github.com/interconnectedcloud/qdr-operator/test/e2e/framework/log"
+	e2elog "github.com/enkeys/qdr-operator/test/e2e/framework/log"
 	corev1 "k8s.io/api/core/v1"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

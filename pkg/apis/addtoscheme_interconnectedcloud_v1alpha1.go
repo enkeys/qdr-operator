@@ -1,7 +1,7 @@
 package apis
 
 import (
-	"github.com/interconnectedcloud/qdr-operator/pkg/apis/interconnectedcloud/v1alpha1"
+	"github.com/enkeys/qdr-operator/pkg/apis/interconnectedcloud/v1alpha1"
 )
 
 func init() {

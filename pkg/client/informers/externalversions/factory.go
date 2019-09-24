@@ -23,9 +23,9 @@ import (
 	sync "sync"
 	time "time"
 
-	versioned "github.com/interconnectedcloud/qdr-operator/pkg/client/clientset/versioned"
-	interconnectedcloud "github.com/interconnectedcloud/qdr-operator/pkg/client/informers/externalversions/interconnectedcloud"
-	internalinterfaces "github.com/interconnectedcloud/qdr-operator/pkg/client/informers/externalversions/internalinterfaces"
+	versioned "github.com/enkeys/qdr-operator/pkg/client/clientset/versioned"
+	interconnectedcloud "github.com/enkeys/qdr-operator/pkg/client/informers/externalversions/interconnectedcloud"
+	internalinterfaces "github.com/enkeys/qdr-operator/pkg/client/informers/externalversions/internalinterfaces"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

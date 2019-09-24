@@ -2,8 +2,8 @@ package qdrmanagement
 
 import (
 	"encoding/json"
-	"github.com/interconnectedcloud/qdr-operator/test/e2e/framework"
-	entities2 "github.com/interconnectedcloud/qdr-operator/test/e2e/framework/qdrmanagement/entities"
+	"github.com/enkeys/qdr-operator/test/e2e/framework"
+	entities2 "github.com/enkeys/qdr-operator/test/e2e/framework/qdrmanagement/entities"
 	"reflect"
 	"time"
 )

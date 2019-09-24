@@ -1,11 +1,11 @@
 package e2e
 
 import (
-	"github.com/interconnectedcloud/qdr-operator/test/e2e/framework/qdrmanagement"
+	"github.com/enkeys/qdr-operator/test/e2e/framework/qdrmanagement"
 	"time"
 
-	"github.com/interconnectedcloud/qdr-operator/pkg/apis/interconnectedcloud/v1alpha1"
-	"github.com/interconnectedcloud/qdr-operator/test/e2e/framework"
+	"github.com/enkeys/qdr-operator/pkg/apis/interconnectedcloud/v1alpha1"
+	"github.com/enkeys/qdr-operator/test/e2e/framework"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

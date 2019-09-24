@@ -31,7 +31,7 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 	uexec "k8s.io/utils/exec"
 
-	e2elog "github.com/interconnectedcloud/qdr-operator/test/e2e/framework/log"
+	e2elog "github.com/enkeys/qdr-operator/test/e2e/framework/log"
 	//"github.com/onsi/gomega"
 )
 

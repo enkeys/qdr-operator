@@ -28,9 +28,9 @@ import (
 	"github.com/onsi/gomega"
 	"k8s.io/klog"
 
-	"github.com/interconnectedcloud/qdr-operator/test/e2e/framework"
-	"github.com/interconnectedcloud/qdr-operator/test/e2e/framework/ginkgowrapper"
-	e2elog "github.com/interconnectedcloud/qdr-operator/test/e2e/framework/log"
+	"github.com/enkeys/qdr-operator/test/e2e/framework"
+	"github.com/enkeys/qdr-operator/test/e2e/framework/ginkgowrapper"
+	e2elog "github.com/enkeys/qdr-operator/test/e2e/framework/log"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 

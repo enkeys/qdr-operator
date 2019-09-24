@@ -3,7 +3,7 @@ package test
 import (
 	"github.com/RHsyseng/operator-utils/pkg/validation"
 	"github.com/ghodss/yaml"
-	interconnectv1alpha1 "github.com/interconnectedcloud/qdr-operator/pkg/apis/interconnectedcloud/v1alpha1"
+	interconnectv1alpha1 "github.com/enkeys/qdr-operator/pkg/apis/interconnectedcloud/v1alpha1"
 	"github.com/stretchr/testify/assert"
 	"io/ioutil"
 	"strings"

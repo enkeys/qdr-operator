@@ -13,8 +13,8 @@ SCRIPTPATH="$(cd "$(dirname "$0")" && pwd -P)"
 GENERATOR_BASE=${SCRIPTPATH}/../vendor/k8s.io/code-generator
 
 "$GENERATOR_BASE/generate-groups.sh" "client,informer,lister" \
-    github.com/interconnectedcloud/qdr-operator/pkg/client \
-    github.com/interconnectedcloud/qdr-operator/pkg/apis \
+    github.com/enkeys/qdr-operator/pkg/client \
+    github.com/enkeys/qdr-operator/pkg/apis \
     interconnectedcloud:v1alpha1 \
     --go-header-file "${SCRIPTPATH}/boilerplate.go.txt" \
     "$@"

@@ -4,9 +4,9 @@ import (
 	"reflect"
 	"strconv"
 
-	v1alpha1 "github.com/interconnectedcloud/qdr-operator/pkg/apis/interconnectedcloud/v1alpha1"
-	"github.com/interconnectedcloud/qdr-operator/pkg/constants"
-	"github.com/interconnectedcloud/qdr-operator/pkg/utils/selectors"
+	v1alpha1 "github.com/enkeys/qdr-operator/pkg/apis/interconnectedcloud/v1alpha1"
+	"github.com/enkeys/qdr-operator/pkg/constants"
+	"github.com/enkeys/qdr-operator/pkg/utils/selectors"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/intstr"

@@ -3,10 +3,10 @@ package deployments
 import (
 	"strconv"
 
-	v1alpha1 "github.com/interconnectedcloud/qdr-operator/pkg/apis/interconnectedcloud/v1alpha1"
-	"github.com/interconnectedcloud/qdr-operator/pkg/resources/containers"
-	"github.com/interconnectedcloud/qdr-operator/pkg/utils/configs"
-	"github.com/interconnectedcloud/qdr-operator/pkg/utils/selectors"
+	v1alpha1 "github.com/enkeys/qdr-operator/pkg/apis/interconnectedcloud/v1alpha1"
+	"github.com/enkeys/qdr-operator/pkg/resources/containers"
+	"github.com/enkeys/qdr-operator/pkg/utils/configs"
+	"github.com/enkeys/qdr-operator/pkg/utils/selectors"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

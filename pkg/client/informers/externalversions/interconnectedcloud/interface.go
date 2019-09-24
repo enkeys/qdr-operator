@@ -19,8 +19,8 @@ limitations under the License.
 package interconnectedcloud
 
 import (
-	v1alpha1 "github.com/interconnectedcloud/qdr-operator/pkg/client/informers/externalversions/interconnectedcloud/v1alpha1"
-	internalinterfaces "github.com/interconnectedcloud/qdr-operator/pkg/client/informers/externalversions/internalinterfaces"
+	v1alpha1 "github.com/enkeys/qdr-operator/pkg/client/informers/externalversions/interconnectedcloud/v1alpha1"
+	internalinterfaces "github.com/enkeys/qdr-operator/pkg/client/informers/externalversions/internalinterfaces"
 )
 
 // Interface provides access to each of this group's versions.

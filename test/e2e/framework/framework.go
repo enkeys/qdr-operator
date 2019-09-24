@@ -25,8 +25,8 @@ import (
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	qdrclient "github.com/interconnectedcloud/qdr-operator/pkg/client/clientset/versioned"
-	e2elog "github.com/interconnectedcloud/qdr-operator/test/e2e/framework/log"
+	qdrclient "github.com/enkeys/qdr-operator/pkg/client/clientset/versioned"
+	e2elog "github.com/enkeys/qdr-operator/test/e2e/framework/log"
 	apiextv1b1 "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1beta1"
 	apiextension "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset"
 	clientset "k8s.io/client-go/kubernetes"

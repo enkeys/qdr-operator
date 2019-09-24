@@ -79,5 +79,5 @@ script:
 - go test -v -race "./test/e2e" #-covermode=count -coverprofile=organize.cov
 
 # after_success:
-- gocovmerge *.cov */*.cov > merged.cov erprofile
-- $GOPATH/bin/goveralls -coverprofile merged.coverprofile -service=travis-ci
+#- gocovmerge *.cov */*.cov > merged.cov erprofile
+#- $GOPATH/bin/goveralls -coverprofile merged.coverprofile -service=travis-ci

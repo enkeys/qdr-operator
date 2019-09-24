@@ -7,8 +7,8 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/interconnectedcloud/qdr-operator/pkg/apis"
-	"github.com/interconnectedcloud/qdr-operator/pkg/controller"
+	"github.com/enkeys/qdr-operator/pkg/apis"
+	"github.com/enkeys/qdr-operator/pkg/controller"
 	"github.com/operator-framework/operator-sdk/pkg/k8sutil"
 	"github.com/operator-framework/operator-sdk/pkg/leader"
 	sdkVersion "github.com/operator-framework/operator-sdk/version"

@@ -19,7 +19,7 @@ limitations under the License.
 package versioned
 
 import (
-	interconnectedcloudv1alpha1 "github.com/interconnectedcloud/qdr-operator/pkg/client/clientset/versioned/typed/interconnectedcloud/v1alpha1"
+	interconnectedcloudv1alpha1 "github.com/enkeys/qdr-operator/pkg/client/clientset/versioned/typed/interconnectedcloud/v1alpha1"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"

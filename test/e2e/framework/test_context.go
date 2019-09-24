@@ -31,7 +31,7 @@ import (
 
 const (
 	defaultHost          = "http://127.0.0.1:8080"
-	defaultOperatorImage = "quay.io/interconnectedcloud/qdr-operator"
+	defaultOperatorImage = "quay.io/enkeys/qdr-operator"
 	defaultQdrImage      = "quay.io/interconnectedcloud/qdrouterd:1.9.0"
 )
 
