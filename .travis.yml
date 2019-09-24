@@ -24,19 +24,15 @@ env:
     - MINIKUBE_HOME=$HOME
     - CHANGE_MINIKUBE_NONE_USER=true
     - KUBECONFIG=$HOME/.kube/config
-    - KUBERNETES_VERSION="$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)"
-    - OPERATORSDK_VERSION="$(curl -s https://api.github.com/repos/operator-framework/operator-sdk/releases/latest | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')"
+    - KUBERNETES_VERSION=$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)
+    - OPERATORSDK_VERSION=$(curl -s https://api.github.com/repos/operator-framework/operator-sdk/releases/latest | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
 
 before_install:
-# TODO Reporting
+# Get tools
 - go get github.com/wadey/gocovmerge
 - go get github.com/mattn/goveralls
-- go get github.com/tools/godep
-- go get -u golang.org/x/lint/golint
-
-# Configure GO environment
-## install dep
-- curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+- go get github.com/golang/dep/cmd/dep
+- go get golang.org/x/lint/golint
 
 # Setup kubectl
 - curl -Lo kubectl https://storage.googleapis.com/kubernetes-release/release/${KUBERNETES_VERSION}/bin/linux/amd64/kubectl
