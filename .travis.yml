@@ -24,6 +24,7 @@ env:
     - KUBECONFIG=$HOME/.kube/config
     - KUBERNETES_VERSION=$(curl -k -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)
     - OPERATORSDK_VERSION=v0.17.0
+    - CERT_MANAGER=v0.14.2
 
     # QDR
     - REGISTRY=quay.io/interconnectedcloud
@@ -53,11 +54,13 @@ before_install:
   - chmod +x operator-sdk
   - sudo mv operator-sdk /usr/local/bin/
 
+  # Install cert-manager
+  - kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/${CERT_MANAGER}/cert-manager.yaml
+
   # Setup
   - cd $GOPATH/src/github.com/interconnectedcloud/qdr-operator
   - dep ensure -v && dep status
 
-  # Install 
 
 script:
   - cd $GOPATH/src/github.com/interconnectedcloud/qdr-operator
